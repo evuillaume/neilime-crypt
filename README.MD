@@ -57,7 +57,7 @@ neilime_crypt:
 Exemple crypter AES :
 
 ## Client
-Le client doit implementer l'interface [ClientInterface](Neilime\Bundle\CryptBundle\Client\ClientInterface.php)
+Le client doit implementer l'interface [ClientInterface](Client\ClientInterface.php)
 avec 2 methodes :
 - crypt
 - decrypt
@@ -67,7 +67,7 @@ avec 2 methodes :
     arguments: ['%crypter_key%', '%crypter_iv%']
 ```
 ## Crypter
-Le client doit implementer l'interface [CrypterInterface](Neilime\Bundle\CryptBundle\Crypter\CrypterInterface.php)
+Le crypter doit implementer l'interface [CrypterInterface](Crypter\CrypterInterface.php)
 ####Paramètres :
 - 1 : le nom du crypter 
 - 2 : le prefix des elements compatibles pour le décryptage
