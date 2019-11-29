@@ -1,0 +1,20 @@
+{
+    "name": "neilime/neilime-crypt",
+    "description": "for test",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "require": {
+        "phpseclib/phpseclib": "^2.0",
+        "aws/aws-sdk-php": "^3.0",
+        "aws/aws-sdk-php-symfony": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Emilien Vuillame",
+            "email": "emilien.vuillaume@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Neilime\\Bundle\\CryptBundle\\": "" }
+    }
+}

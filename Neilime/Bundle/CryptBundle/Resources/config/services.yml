@@ -1,0 +1,10 @@
+services:
+
+  neilime.crypt.crypters_bag:
+    class: Neilime\Bundle\CryptBundle\Crypt\CryptersBag
+
+  # -----------------------------------
+  # Helper
+  neilime.crypt.helper:
+    class: Neilime\Bundle\CryptBundle\Helper\Crypter
+    arguments: ['@neilime.crypt.crypters_bag']
