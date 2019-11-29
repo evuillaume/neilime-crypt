@@ -1,45 +1,33 @@
 NeilimeCryptBundle
 ================
 
+tag  1.1
+
 ##Description
 
 Ce bundle permet la gestion de crypter et décrypter des données sensibles
 
 ## Installation
 
-### 1. Recuperation du code source :
-récuperer le code source dans le repertoire {packages/} comme ceci :
-```
-/packages
-    /neilime
-        /neilime-crypt
-            /Neilime
-                /Bundle
-                    /CryptBundle
-```
-
-### 2. Ajout des lignes suivantes dans le composer.json :
+### 1. Ajout des lignes suivantes dans le composer.json :
 ```
 // composer.json
 {
     require: {
         ...
-        ""neilime/neilime-crypt": "@dev"
+        "neilime/neilime-crypt": "1.*"
     },
     "repositories": [
         ...
         {
-            "type": "path",
-            "url": "packages/neilime/neilime-crypt/Neilime/Bundle/CryptBundle",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url":  "git@github.com:evuillaume/neilime-crypt.git"
         }
     ]
 }
 ```
 
-### 3. Inclure le bundle dans votre appKernel.php :
+### 2. Inclure le bundle dans votre appKernel.php :
 ```
 <?php
 
