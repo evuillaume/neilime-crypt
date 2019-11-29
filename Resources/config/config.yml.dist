@@ -1,3 +1,2 @@
-neilime:
-    crypt:
-        enabled: false
+neilime_crypt:
+    enabled: false

@@ -46,9 +46,8 @@ Décrypte automatiquement les elements du fichier config.yml si besoin (voir pre
 ```
 //config.yml
 
-neilime:
-    crypt:
-        enabled: false
+neilime_crypt:
+    enabled: false
 ```
 
 ## Fonctionnement
